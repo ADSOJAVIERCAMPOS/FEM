@@ -1,0 +1,23 @@
+:root {
+    --primary: #ff758c;
+    --glass: rgba(255, 255, 255, 0.1);
+}
+body { 
+    margin: 0; height: 100vh; display: flex; justify-content: center; align-items: center;
+    font-family: 'Segoe UI', sans-serif; background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+    color: white;
+}
+.glass-container {
+    background: var(--glass); backdrop-filter: blur(15px);
+    padding: 40px; border-radius: 30px; text-align: center;
+    border: 1px solid rgba(255,255,255,0.2); width: 350px;
+}
+.badge { background: white; color: var(--primary); padding: 5px 15px; border-radius: 20px; font-size: 0.8rem; display: inline-block; margin-bottom: 10px; }
+.btn-primary { 
+    background: white; color: var(--primary); border: none; padding: 15px 25px; 
+    border-radius: 25px; font-weight: bold; cursor: pointer; width: 100%; transition: 0.3s;
+}
+.btn-primary:hover { transform: scale(1.05); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+.admin-link { display: block; margin-top: 20px; color: white; opacity: 0.5; text-decoration: none; font-size: 0.7rem; }
+.admin-body { background: #1a1a2e; }
+.dashboard { width: 80%; background: #16213e; padding: 30px; border-radius: 20px; }
